@@ -14,11 +14,11 @@ ENV PATH="/root/.local/bin:$PATH"
 
 WORKDIR /app
 
-RUN uv venv .venv
+RUN uv venv .Andr3sss
 
 COPY requirements.txt .
 
-RUN uv pip install --python .venv/bin/python -r requirements.txt
+RUN uv pip install --python .Andr3sss/bin/python -r requirements.txt
 
-ENV VIRTUAL_ENV=/app/.venv
-ENV PATH="/app/.venv/bin:$PATH"
+ENV VIRTUAL_ENV=/app/.Andr3sss
+ENV PATH="/app/.Andr3sss/bin:$PATH"
