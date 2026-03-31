@@ -1,39 +1,22 @@
 {
-"name": "ML Workshop 2 - Work Enviroment",
-
-"build":{
-    "dockerfile": "Dockerfile"
-
-},
-
-
-"customizacions":{
-    "vscode":{
-        "extensions":[
-            "ms-python.python",
-            "ms-toolsai.jupyter",
-            "ms-toolsai.jupyter-renders",
-            "charliermash.ruff",
-            "ms-azuretool.vscode-containers"
-        ]
-
-        }
-    }
-},
-
-"customizacions":{
-    "vscode":{
-        "extensions":{
-            "charliermash.ruff",
-            "ms-azuretool.vscode-containers"
-
+    "name": "ML Workshop 2 - Work Environment",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.jupyter-renderers",
+                "charliermarsh.ruff",
+                "ms-azuretools.vscode-containers"
+            ],
             "settings": {
-            "pthon.defualtInterpreterPath": "/app/.venv/bin/python",
-            "jupyter.notebookFileRoot": "${worksapceFolder}"
+                "python.defaultInterpreterPath": "/app/.venv/bin/python",
+                "jupyter.notebookFileRoot": "${workspaceFolder}"
             }
-
         }
-    }
-},
-
-"postCreateCommand": "echo 'source /app/.venv/bin/activate' ´>> ~/.bashrc"
+    },
+    "postCreateCommand": "echo 'source /app/.venv/bin/activate' >> ~/.bashrc"
+}
