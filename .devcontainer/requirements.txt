@@ -3,3 +3,5 @@ numpy
 ipykernel
 seaborn
 matplotlib
+scikit-learn
+ConfusionMatrixDisplay
